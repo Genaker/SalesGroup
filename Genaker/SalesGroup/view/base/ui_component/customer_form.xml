@@ -4,6 +4,7 @@
             <field name="sales_group_id" formElement="select">
                 <argument name="data" xsi:type="array">
                     <item name="config" xsi:type="array">
+                        <item name="label" xsi:type="string" translate="true">Sales Group</item>
                         <item name="fieldGroup" xsi:type="string">group_id</item>
                         <item name="source" xsi:type="string">customer</item>
                     </item>
