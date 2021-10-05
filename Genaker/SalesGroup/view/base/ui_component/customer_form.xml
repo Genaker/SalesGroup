@@ -1,11 +1,25 @@
-<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configura$
     <fieldset name="customer">
-        <container name="container_group" component="Magento_Ui/js/form/components/group" sortOrder="25">
-            <field name="sales_group_id" formElement="select">
+          <container name="container_sales_group" component="Magento_Ui/js/form/components/group" sortOrder="21">
+            <argument name="data" xsi:type="array">
+                <item name="type" xsi:type="string">group</item>
+                <item name="config" xsi:type="array">
+                    <item name="dataScope" xsi:type="boolean">false</item>
+                    <item name="validateWholeGroup" xsi:type="boolean">false</item>
+                </item>
+            </argument>
+            <field name="sales_group_id" formElement="input">
+            <settings>
+                <dataType>number</dataType>
+                <label>Sales Group ID</label>
+                 <tooltip>
+                <description> Insert Values from this list : 1 - Group 1; 2 - Group 2; 3 - Group 3;</description>
+                </tooltip>
+                <visible>true</visible>
+            </settings>
                 <argument name="data" xsi:type="array">
                     <item name="config" xsi:type="array">
-                        <item name="label" xsi:type="string" translate="true">Sales Group</item>
-                        <item name="fieldGroup" xsi:type="string">group_id</item>
+                        <item name="fieldGroup" xsi:type="string">sales_group_id</item>
                         <item name="source" xsi:type="string">customer</item>
                     </item>
                 </argument>
@@ -17,3 +31,4 @@
         </container>
     </fieldset>
 </form>
+           
