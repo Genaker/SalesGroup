@@ -10,9 +10,9 @@ namespace Genaker\SalesGroup\Ui\Component\Listing\Column;
 class SalesGroupActions extends \Magento\Ui\Component\Listing\Columns\Column
 {
 
-    const URL_PATH_EDIT = 'genaker_salesgroup/salesgroup/edit';
-    const URL_PATH_DELETE = 'genaker_salesgroup/salesgroup/delete';
-    const URL_PATH_DETAILS = 'genaker_salesgroup/salesgroup/details';
+    const URL_PATH_EDIT = 'salesgroup/salesgroup/edit';
+    const URL_PATH_DELETE = 'salesgroup/salesgroup/delete';
+    const URL_PATH_DETAILS = 'salesgroup/salesgroup/details';
     protected $urlBuilder;
 
     /**
