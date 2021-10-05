@@ -49,7 +49,22 @@
 			<settings>
 				<dataType>text</dataType>
 				<label translate="true">Name</label>
-				<dataScope>Name</dataScope>
+				<dataScope>name</dataScope>
+				<validation>
+					<rule name="required-entry" xsi:type="boolean">false</rule>
+				</validation>
+			</settings>
+		</field>
+		<field name="Group Code" formElement="textarea" sortOrder="10">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="source" xsi:type="string">SalesGroup</item>
+				</item>
+			</argument>
+			<settings>
+				<dataType>text</dataType>
+				<label translate="true">sales_group_code</label>
+				<dataScope>sales_group_code</dataScope>
 				<validation>
 					<rule name="required-entry" xsi:type="boolean">false</rule>
 				</validation>
