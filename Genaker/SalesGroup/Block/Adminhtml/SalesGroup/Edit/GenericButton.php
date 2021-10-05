@@ -17,6 +17,7 @@ abstract class GenericButton
     /**
      * @param \Magento\Backend\Block\Widget\Context $context
      */
+    
     public function __construct(Context $context)
     {
         $this->context = $context;
