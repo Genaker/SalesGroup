@@ -76,7 +76,7 @@
 				<label translate="true">ID</label>
 			</settings>
 		</column>
-		<column name="Name">
+		<column name="name">
 			<settings>
 				<filter>text</filter>
 				<label translate="true">Name</label>
