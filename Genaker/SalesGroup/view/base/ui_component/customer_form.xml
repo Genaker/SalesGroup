@@ -1,4 +1,4 @@
-<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configura$
+<form>
     <fieldset name="customer">
           <container name="container_sales_group" component="Magento_Ui/js/form/components/group" sortOrder="21">
             <argument name="data" xsi:type="array">
